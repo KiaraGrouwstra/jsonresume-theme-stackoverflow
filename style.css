@@ -1,3 +1,61 @@
+/* fonts */
+
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Josefin Sans Light'), local('JosefinSans-Light'), url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3FZQNVED7rKGKxtqIqX5Ecpl5te10k.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Josefin Sans Bold'), local('JosefinSans-Bold'), url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3FZQNVED7rKGKxtqIqX5Ectllte10k.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Lato Light Italic'), local('Lato-LightItalic'), url(https://fonts.gstatic.com/s/lato/v16/S6u_w4BMUTPHjxsI9w2_Gwfo.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v16/S6u8w4BMUTPHjxsAXC-v.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v16/S6u_w4BMUTPHjxsI5wq_Gwfo.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh7USSwiPHA.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
+}
+
 /********************************************
 * 	reset from
 * 	http://meyerweb.com/eric/tools/css/reset/
@@ -12,7 +70,7 @@ object,
 iframe,
 h1,
 h2,
-h3,
+h2,
 h4,
 h5,
 h6,
@@ -135,14 +193,67 @@ table {
 *	COMMONS
 ****************/
 
+h1 {
+  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: .5px;
+}
+
+h3 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: .4px;
+}
+
+h3.bold {
+  font-weight: 700;
+}
+
+h4 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+h4.bold {
+  font-weight: 700;
+}
+
+h5 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+}
+
+h5.italic {
+  font-style: italic;
+}
+
+h6 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+}
+
 body,
 html {
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 13px;
-  color: #40484f;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1.46153846;
+  background: white;
+  margin: 50px 0 100px;
+  letter-spacing: .3px;
+  color: #39424B;
+  font-size: 13px;
+  /* line-height: 1.46153846; */
   text-align: left;
 }
 
@@ -151,31 +262,18 @@ p {
 }
 
 a {
-  color: #0095ff;
-  text-decoration: none;
+  color: inherit;
+  text-decoration: inherit;
 }
 
 a:hover {
-  color: #0c65a5;
-  text-decoration: underline;
+  color: #2895F1;
 }
 
 li {
   list-style-type: square;
   list-style-position: outside;
   margin-left: 1.3em;
-}
-
-h1 {
-  font-size: 2rem;
-}
-
-h2 {
-  font-size: 1.67rem;
-}
-
-h3 {
-  font-size: 1.27rem;
 }
 
 em {
@@ -193,13 +291,26 @@ strong {
 /* main container */
 
 #resume {
-  padding: 1.5rem;
+  background: white;
+  width: 612px;
+  min-height: 792px;
+  display: block;
+  margin: 0 auto;
+  border-top: 10px solid #56817A;
+  padding: 36px 22px 30px 34px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+#resume:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* every section wrapper */
 
 .section {
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 section .location {
@@ -241,21 +352,26 @@ section .location {
 }
 
 #header h1.name {
-  font-size: 2.8rem;
-  font-weight: 100;
   line-height: 100%;
 }
 
 #header h2.label {
   color: #202931;
-  font-size: 1.47rem;
-  font-weight: 300;
 }
 
 #header .image {
   width: 11em;
   float: right;
   border-radius: 4px;
+  margin-top: -5px;
+  margin-right: 18px;
+}
+
+#header img.image {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  border: 2px solid #56817A;
 }
 
 .main-summary {
@@ -271,12 +387,13 @@ section .location {
 .section-title {
   display: inline-block;
   background: #fff;
-  padding: 0 1em 0.3em 0;
-  color: #ff6d1f;
-  text-transform: uppercase;
-  font-weight: 600;
+  /* padding: 0 1em 0.3em 0; */
+  /* color: #ff6d1f; */
+  /* text-transform: uppercase; */
+  /* font-weight: 600; */
   border: none;
-  font-size: 0.9rem;
+  /* font-size: 0.9rem; */
+  margin: 0.7em 0;
 }
 
 .section > header {
@@ -378,7 +495,7 @@ section .location {
   padding: 4px 5px 5px;
   font-size: 0.9rem;
   line-height: 1;
-  color: #3e6d8e;
+  /* color: #3e6d8e; */
   background-color: #dfeaf1;
   border: 0 solid #dfeaf1;
   white-space: nowrap;
@@ -412,7 +529,7 @@ section .location {
 
 /* Social Media Brand Colors */
 
-.google-plus {
+/* .google-plus {
   color: #dd4b39;
 }
 
@@ -479,22 +596,24 @@ section .location {
 
 .hacker-news {
   color: #ff6600;
-}
+} */
 
 .stack-overflow::after {
   position: absolute;
   left: 0;
   content: "\f16c";
-  color: #f68a1f;
+  /* color: #f68a1f; */
   overflow: hidden;
   height: 100%;
 }
 
+/* 
 .telegram {
   color: #2291c3;
 }
+*/
 
-#languages .item,
+ #languages .item,
 #skills .item,
 #interests .item {
   width: 15em;
@@ -520,14 +639,18 @@ section .location {
   padding-left: 0.2em;
 }
 
+.bar {
+  width: 45px;
+  /* margin: 8px 0 10px; */
+  border-top: 1px solid #56817A;
+}
+
 .level .bar {
-  border: 1px solid #ddd;
   display: block;
-  width: 10em;
   height: 5px;
   position: relative;
 }
-
+/* 
 .level .bar::after {
   position: absolute;
   content: " ";
@@ -538,30 +661,26 @@ section .location {
 }
 
 .level.beginner .bar::after {
-  background: #eb5f51;
   width: 2.5em;
 }
 
 .level.intermediate .bar::after {
-  background: #ffdf1f;
   width: 5em;
 }
 
 .level.advanced .bar::after,
 .level.fluent .bar::after {
-  background: #5cb85c;
   width: 7.5em;
 }
 
 .level.master .bar::after,
 .level.native.speaker .bar::after {
-  background: #59c596;
   width: 10em;
 }
-
+ */
 #references .item {
   padding-left: 0.5em;
-  border-left: 5px solid #ff6d1f;
+  /* border-left: 5px solid #ff6d1f; */
 }
 
 .section > section > section {
@@ -594,8 +713,9 @@ section .location {
   }
   .section header .date {
     float: right;
-    font-weight: 600;
-    color: #000;
+    font-style: italic;
+    /* font-weight: 600; */
+    /* color: #000; */
   }
 }
 
@@ -609,14 +729,14 @@ section .location {
   }
   #resume {
     width: 820px;
-    margin: 2rem auto;
   }
   .section > section > header .space-left {
     opacity: 1;
     cursor: pointer;
   }
   .section > section:not(.main-summary) {
-    margin-left: 1.67rem;
+    /* margin-left: 1.67rem; */
+    margin: 0.4rem 0 0 1.67rem;
   }
   .company::before,
   .institution::before,
@@ -654,9 +774,6 @@ section .location {
   @page {
     margin: 1cm 1.4cm;
   }
-  .item-count {
-    display: none;
-  }
   .company::before,
   .institution::before,
   .organization::before,
@@ -668,7 +785,7 @@ section .location {
     background: transparent;
   }
   .section {
-    margin: 0.8rem 0;
+    /* margin: 0.8rem 0; */
     padding: 0;
   }
   .section header {
@@ -678,7 +795,7 @@ section .location {
     padding-bottom: 0.15rem;
   }
   .section > section > section {
-    margin: 0 0 1em 0;
+    /* margin: 0 0 1em 0; */
   }
   .section > section > section:last-of-type {
     margin: 0;
@@ -739,7 +856,7 @@ section .location {
   }
   .level em {
     font-style: normal;
-    padding: 0.1em 0;
+    /* padding: 0.1em 0; */
   }
   .level .bar {
     display: none;
@@ -750,8 +867,5 @@ section .location {
   .item.display {
     display: block;
     opacity: 1 !important;
-  }
-  .fa-map-marker-alt:before {
-    padding-left: 0.1em;
   }
 }

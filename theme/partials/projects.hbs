@@ -1,7 +1,8 @@
 {{#if resume.projects.length}}
 <section class="section">
   <header>
-    <h2 class='section-title'>Projects <span class="item-count">({{resume.projects.length}})</span></h2>
+    <h3 class='section-title'>Projects</h2>
+    <div class="bar"></div>
   </header>
   <section id="projects">
     {{#each resume.projects}}
@@ -29,7 +30,6 @@
       {{/if}}
       {{#location}}
       <span class="location">
-      <span class="fas fa-map-marker-alt"></span>
       {{#if city}}
       <span class="city">{{city}},</span>
       {{/if}}
@@ -45,7 +45,6 @@
       {{/location}}
       {{#if url}}
       <span class="website">
-        <span class="fas fa-external-link-alt"></span>
         <a target="_blank" href="{{url}}">{{url}}</a>
       </span>
       {{/if}}

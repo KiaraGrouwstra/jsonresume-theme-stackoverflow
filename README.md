@@ -26,7 +26,10 @@ Clone the repository
 git clone https://github.com/francescoes/jsonresume-theme-stackoverflow.git
 ```
 
-Create a 'resume.json' file in the current folder and follow the [json resume schema](https://jsonresume.org/schema/)
+Load NodeJS:
+```
+nix shell nixpkgs#nodejs
+```
 
 Install dependencies:
 
@@ -37,7 +40,9 @@ npm install
 and simply run:
 
 ```
-resume serve --theme .
+resumed init
+resumed render --theme $(pwd)/index.js
+echo $(pwd)/resume.html
 ```
 
 ### Social Profiles Icons

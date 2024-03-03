@@ -1,7 +1,8 @@
 {{#if resume.certificates.length}}
   <section class="section">
     <header>
-      <h2 class="section-title">Certificates</h2>
+      <h3 class="section-title">Certificates</h2>
+      <div class="bar"></div>
     </header>
     <section id="certificates">
       {{#each resume.certificates}}
@@ -29,7 +30,6 @@
           <div class="item">
             {{#if url}}
               <span class="url">
-                <span class="fas fa-external-link-alt"></span>
                 <a target="_blank" href="{{url}}">{{url}}</a>
               </span>
             {{/if}}

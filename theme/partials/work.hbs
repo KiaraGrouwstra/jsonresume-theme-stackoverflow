@@ -1,7 +1,8 @@
 {{#if resume.work.length}}
 <section class="section">
   <header>
-    <h2 class='section-title'>Work Experience <span class="item-count">({{resume.work.length}})</span></h2>
+    <h3 class='section-title'>Work Experience</h2>
+    <div class="bar"></div>
   </header>
 
   <section id="work">
@@ -36,7 +37,6 @@
 
       {{#location}}
       <span class="location">
-        <span class="fas fa-map-marker-alt"></span>
         {{#if city}}
         <span class="city">{{city}}</span>
         {{/if}}
@@ -47,7 +47,6 @@
       {{/location}}
       {{#if url}}
       <span class="url">
-        <span class="fas fa-external-link-alt"></span>
         <a target="_blank" href="{{url}}">{{url}}</a>
       </span> {{/if}} {{#if keywords.length}}
       <ul class="keywords">

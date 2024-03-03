@@ -1,7 +1,8 @@
 {{#if resume.interests.length}}
 <section class="section">
   <header>
-    <h2 class='section-title' class='section-title'>Interests</h2>
+    <h3 class='section-title' class='section-title'>Interests</h2>
+    <div class="bar"></div>
   </header>
   <section id="interests">
     {{#each resume.interests}}
@@ -9,7 +10,7 @@
       {{#if name}}
       <h3 class="name">
         {{name}}
-      </h3>
+      </h2>
       {{/if}}
       {{#if keywords.length}}
       <ul class="keywords">

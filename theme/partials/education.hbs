@@ -1,7 +1,8 @@
 {{#if resume.education.length}}
 <section class="section">
   <header>
-    <h2 class='section-title'>Education <span class="item-count">({{resume.education.length}})</span></h2>
+    <h3 class='section-title'>Education</h2>
+    <div class="bar"></div>
   </header>
 
   <section id="education">
@@ -48,7 +49,6 @@
 
       {{#location}}
       <span class="location">
-        <span class="fas fa-map-marker-alt"></span>
         {{#if city}}
         <span class="city">{{city}}</span>
         {{/if}}

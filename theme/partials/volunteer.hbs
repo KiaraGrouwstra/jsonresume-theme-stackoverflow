@@ -1,7 +1,8 @@
 {{#if resume.volunteer.length}}
 <section class="section">
   <header>
-    <h2 class='section-title'>Volunteer</h2>
+    <h3 class='section-title'>Volunteer</h2>
+    <div class="bar"></div>
   </header>
   <section id="volunteer">
     {{#each resume.volunteer}}
@@ -44,13 +45,11 @@
       {{/if}}
       {{#if website}}
       <div class="website">
-        <span class="fas fa-external-link-alt"></span>
         <a target="_blank" href="{{website}}">{{website}}</a>
       </div>
       {{/if}}
       {{#location}}
       <span class="location">
-        <span class="fas fa-map-marker-alt"></span>
         {{#if city}}
         <span class="city">
           {{city}},
