@@ -164,7 +164,7 @@ section {
 }
 
 body {
-  line-height: 1;
+  line-height: 1.4em;
 }
 
 ol,
@@ -511,7 +511,7 @@ section .location {
 }
 
 .highlights > li > p {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.0em;
 }
 
 .item {
@@ -769,7 +769,6 @@ section .location {
     padding: 0.1em;
     -ms-word-wrap: break-word;
     word-wrap: break-word;
-    line-height: 1.25;
   }
   @page {
     margin: 1cm 1.4cm;

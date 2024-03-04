@@ -29,7 +29,7 @@ git clone https://github.com/francescoes/jsonresume-theme-stackoverflow.git
 Load NodeJS:
 
 ```sh
-nix shell nixpkgs#nodejs
+nix shell nixpkgs#nodejs nixpkgs#resumed
 ```
 
 Install dependencies:
