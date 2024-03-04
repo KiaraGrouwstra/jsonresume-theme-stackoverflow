@@ -14,7 +14,7 @@ The official [resume-cli](https://github.com/jsonresume/resume-cli) to run the d
 
 Go ahead and install it:
 
-```
+```sh
 npm install -g resume-cli
 ```
 
@@ -22,24 +22,25 @@ npm install -g resume-cli
 
 Clone the repository
 
-```
+```sh
 git clone https://github.com/francescoes/jsonresume-theme-stackoverflow.git
 ```
 
 Load NodeJS:
-```
+
+```sh
 nix shell nixpkgs#nodejs
 ```
 
 Install dependencies:
 
-```
+```sh
 npm install
 ```
 
 and simply run:
 
-```
+```sh
 resumed init
 resumed render --theme $(pwd)/index.js
 echo $(pwd)/resume.html
