@@ -35,6 +35,7 @@
           {{/if}}
         </header>
 
+      {{#if city}}
       {{#location}}
       <span class="location">
         {{#if city}}
@@ -45,7 +46,8 @@
         {{/if}}
       </span>
       {{/location}}
-      {{#if url}}
+      {{/if}}
+      {{#if keywords}}
       <ul class="keywords">
         {{#each keywords}}
         <li>{{.}}</li>
