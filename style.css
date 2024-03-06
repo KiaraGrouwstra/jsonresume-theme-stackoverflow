@@ -626,11 +626,11 @@ section .location {
 }
 
 #skills .item {
-  width: 16em;
+  /* width: 16em; */
 }
 
 #skills .item .keywords {
-  width: 15em;
+  /* width: 15em; */
 }
 
 /* Skill chart */
