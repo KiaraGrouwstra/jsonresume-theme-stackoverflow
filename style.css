@@ -527,8 +527,8 @@ section .location {
 #languages .item,
 #skills .item,
 #interests .item {
-  width: calc(99% / 3);
-  padding: 0 0.5em 0.5em 0;
+  width: calc(95% / 3);
+  padding: 0 0.2em 0.5em 0;
   border-bottom: none;
 }
 
