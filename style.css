@@ -505,6 +505,10 @@ section .location {
   border-bottom: none;
 }
 
+#languages .display {
+  padding: 0 1em;
+}
+
 /* Skill chart */
 
 .level {
