@@ -249,7 +249,6 @@ html {
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-weight: 400;
   background: white;
-  margin: 50px 0 100px;
   letter-spacing: .3px;
   color: #39424B;
   font-size: 13px;
@@ -272,7 +271,7 @@ a:hover {
 li {
   list-style-type: square;
   list-style-position: outside;
-  margin-left: 1.3em;
+  margin-left: 1.5em;
 }
 
 em {
@@ -290,20 +289,8 @@ strong {
 /* main container */
 
 #resume {
-  background: white;
-  width: 612px;
-  min-height: 792px;
-  display: block;
   margin: 0 auto;
-  border-top: 10px solid #56817A;
   padding: 36px 22px 30px 34px;
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-}
-
-#resume:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 /* every section wrapper */
@@ -458,7 +445,7 @@ section .location {
 .institution::before,
 .organization::before,
 .awarder::before {
-  content: "at ";
+  content: "@ ";
 }
 
 .company,
@@ -512,21 +499,7 @@ section .location {
   padding-bottom: 0.5em;
 }
 
-.fa.social {
-  font-size: 1.1em;
-}
-
-.stack-overflow::after {
-  position: absolute;
-  left: 0;
-  content: "\f16c";
-  overflow: hidden;
-  height: 100%;
-}
-
-#languages .item,
-#skills .item,
-#interests .item {
+#skills .item {
   width: calc(95% / 3);
   padding: 0 0.2em 0.5em 0;
   border-bottom: none;
@@ -544,7 +517,6 @@ section .location {
 
 .bar {
   width: 45px;
-  /* margin: 8px 0 10px; */
   border-top: 1px solid #56817A;
 }
 
@@ -556,7 +528,6 @@ section .location {
 
 #references .item {
   padding-left: 0.5em;
-  /* border-left: 5px solid #ff6d1f; */
 }
 
 .section > section > section {
@@ -582,148 +553,9 @@ section .location {
 *		TABLET
 ****************/
 
-@media screen and (min-width: 602px) {
-  #resume {
-    width: 80%;
-    margin: 0 auto;
-  }
-  .section header .date {
-    float: right;
-    font-style: italic;
-  }
-}
-
-/****************
-*		LAPTOP
-****************/
-
-@media screen and (min-width: 1025px) {
-  li {
-    margin-left: 1.5em;
-  }
-  #resume {
-    width: 820px;
-  }
-  .section > section > header .space-left {
-    opacity: 1;
-    cursor: pointer;
-  }
-  .section > section:not(.main-summary) {
-    /* margin-left: 1.67rem; */
-    margin: 0.4rem 0 0 1.67rem;
-  }
-  .company::before,
-  .institution::before,
-  .organization::before,
-  .awarder::before {
-    content: "| ";
-  }
-  .header-left {
-    float: left;
-    width: 70%;
-    word-break: normal;
-  }
-  .section header .date {
-    padding: 0.2em;
-  }
-  .display {
-    display: none;
-  }
-  .display:not(.none) {
-    display: block;
-  }
-}
-
-@media print {
-  #profiles a:not(.hide-href-print)::after{
-    content: " (" attr(href) ") ";
-  }
-  #resume {
-    margin: 0.1em;
-    padding: 0.1em;
-    -ms-word-wrap: break-word;
-    word-wrap: break-word;
-  }
-  @page {
-    margin: 1cm 1.4cm;
-  }
-  .company::before,
-  .institution::before,
-  .organization::before,
-  .awarder::before {
-    content: "at ";
-  }
-  .main-summary {
-    padding: 0;
-    background: transparent;
-  }
-  .section {
-    padding: 0;
-  }
-  .section header {
-    padding-bottom: 0.15rem;
-  }
-  .section .location {
-    padding-bottom: 0.15rem;
-  }
-  .section > section > section:last-of-type {
-    margin: 0;
-  }
-  ul {
-    margin-top: 0.4em;
-  }
-  ul,
-  li {
-    padding: 0;
-  }
-  ul.keywords li,
-  ul.courses li {
-    margin: 0;
-    padding: 0;
-    font-size: 0.8rem;
-    background: transparent;
-  }
-  ul.keywords li::after,
-  ul.courses li::after {
-    padding: 0 0 0 0.1rem;
-    content: " |";
-  }
-  ul.keywords::before,
-  ul.courses::before {
-    font-size: 0.8rem;
-    font-weight: 600;
-  }
-  .highlights {
-    margin: 0.5em 0 0 0;
-  }
-  ul.keywords::before {
-    content: "Skills acquired: ";
-  }
-  #skills .keywords::before {
-    content: none;
-  }
-  .section p {
-    margin: 0;
-    padding: 0;
-  }
-  ul.courses::before {
-    content: "Major courses: ";
-  }
-  ul.keywords li:last-of-type::after,
-  ul.courses li:last-of-type::after {
-    content: "";
-  }
-  .level em {
-    font-style: normal;
-  }
-  .level .bar {
-    display: none;
-  }
-  #profiles .item {
-    padding: 0;
-  }
-  .item.display {
-    display: block;
-    opacity: 1 !important;
+@media screen {
+  body {
+    border-top: 10px solid #56817A;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
   }
 }
