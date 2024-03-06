@@ -459,6 +459,8 @@ section .location {
 .section header .date {
   display: block;
   font-size: 1rem;
+  font-style: italic;
+  float: right;
   padding: 0.1em 0;
   color: #606d76;
   font-weight: 400;
